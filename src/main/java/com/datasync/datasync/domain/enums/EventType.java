@@ -1,0 +1,13 @@
+package com.datasync.datasync.domain.enums;
+
+public enum EventType {
+    SYNC_STARTED,
+    SYNC_COMPLETED,
+    SYNC_FAILED,
+    SYNC_CANCELLED,
+    DATA_SOURCE_CONNECTED,
+    DATA_SOURCE_DISCONNECTED,
+    CIRCUIT_BREAKER_OPEN,
+    CIRCUIT_BREAKER_CLOSED,
+    RETRY_ATTEMPTED
+}

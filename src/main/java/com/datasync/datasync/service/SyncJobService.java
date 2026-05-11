@@ -21,4 +21,4 @@ public interface SyncJobService {
     MessageResponse pause(String jobId);
     MessageResponse resume(String jobId);
     SyncStatsResponse getStats();
-}
+}   

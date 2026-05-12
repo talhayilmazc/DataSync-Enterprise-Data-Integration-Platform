@@ -199,7 +199,7 @@ public class SyncJobServiceImpl implements SyncJobService {
                 .totalRecordsProcessed(allJobs.stream()
                         .mapToLong(SyncJob::getRecordsProcessed).sum())
                 .totalDataSources(dataSourceRepository.count())
-                .activeDataSources(dataSourceRepository.findByActiveTrue().size())
+                .activeDataSources((long) dataSourceRepository.findByActiveTrue().size())
                 .build();
     }
 
